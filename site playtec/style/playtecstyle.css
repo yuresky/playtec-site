@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@font-face {
+    font-family: playtec;
+    src: url(../fonts/coolvetica\ condensed\ rg.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.1em;
+    font-family: var(--fonte);
+    list-style: none;
+    max-width: 100%;
+}
+:root{
+    --cor: #f23041;
+    --cor2:#bf0628;
+    --cor3:#3b3f8c;
+    --cor4:#32498c;
+    --cor5:#f2f2f2;
+
+    --fonte: "playtec", Arial, sans-serif;
+    --font-texto: Arial, sans-serif;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    padding: 40px 20px 10px 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185);
+
+
+}
+.logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.menu{
+    display: flex;
+
+}
+
+a{
+    background-color: var(--cor);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+}
+.menu a:hover{
+    color: var(--cor2);
+    background-color: var(--cor5);
+    transition-duration: .5s;
+}
+
+main{
+    padding: 20px 10px 0px 10px
+}
+
+.artigo{
+    display: flex;
+    align-items: center;
+    background-color: rgb(59, 63, 140);
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.301);
+}
+
+.televisao{
+    background-image:linear-gradient(to right, transparent, rgb(59, 63, 140)), url(../images/televisaopq.png);
+    width: 70%;
+    height: 70vh;
+    background-size: cover;
+}
+main .artigo > p{
+    max-width: 50vh;
+    max-height: 70vh;
+
+    font-family: var(--font-texto);
+    text-align: center justify;
+    color: white;
+    text-indent: 30px;
+
+
+}
+
+footer{
+    background-color: black;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    text-align: center;
+
+    font-family: var(--font-texto);
+    font-size: .7em;
+    font-weight: bold;
+    color: white;
+}
+
+.sobre{
+display: flex;
+}
+h1{
+    background-image:linear-gradient(to right, var(--cor), var(--cor2));
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.185);
+    color: white;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+
+    font-family: var(--font-texto);
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+iframe{
+    max-width:560px;
+    max-height: 315px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.sobre > p{
+    text-align: center;
+    font-family: var(--font-texto);
+    margin:auto;
+}
+.servicos{
+    background-color: rgb(0, 0, 0);
+    color: white
+}
+
+
+.servicos h2{
+    text-align: center;
+}
+
+
+.tvs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.tvs>div{
+    flex:1 1 200px;
+    margin: 10px;
+}
+.tvs div > img{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.185);
+}
+
+.tv div > img:hover{
+    box-shadow: 2px 2px 15px rgba(202, 8, 8, 0.185);
+}
+.tvs div > p{
+    text-align: center;
+}
+
+@keyframes color-rotate{
+    from{
+        
+    }
+}
