@@ -9,7 +9,6 @@
     font-size: 1.1em;
     font-family: var(--fonte);
     list-style: none;
-    max-width: 100%;
 }
 :root{
     --cor: #f23041;
@@ -59,7 +58,7 @@ a{
 }
 
 main{
-    padding: 20px 10px 0px 10px
+    padding: 20px 10px 0px 10px;
 }
 
 main img{
@@ -72,9 +71,7 @@ main img{
     background-color: rgb(59, 63, 140);
     margin-bottom: 30px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.301);
-}
-.artigo > p{
-    width:100%;
+
 }
 
 .televisao{
@@ -95,6 +92,34 @@ main .artigo > p{
 
 }
 
+.sobre{
+    display: flex;
+    min-width: 320px;
+    max-width: 1000px;
+}
+
+.sobre > p{
+    text-align: center;
+    font-family: var(--font-texto);
+    margin:auto;
+}
+
+.video{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.video>div{
+    flex:1 1 500px;
+    margin: 10px;
+}
+.video > iframe{
+    margin: 20px auto;
+    padding: 10px
+}
+
 footer{
     background-color: black;
     border-radius: 15px 15px 0px 0px;
@@ -107,9 +132,7 @@ footer{
     color: white;
 }
 
-.sobre{
-display: flex;
-}
+
 h1{
     background-image:linear-gradient(to right, var(--cor), var(--cor2));
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.185);
@@ -123,17 +146,6 @@ h1{
 
 }
 
-iframe{
-    max-width:560px;
-    max-height: 315px;
-    border-radius: 0px 0px 10px 0px;
-}
-
-.sobre > p{
-    text-align: center;
-    font-family: var(--font-texto);
-    margin:auto;
-}
 .servicos{
     background-color: rgb(0, 0, 0);
     color: white
